@@ -21,4 +21,8 @@ export class TableOverviewComponent implements OnInit {
   onFormattedTableClick(){
     this.router.navigate(['/formatted-table']);
   }
+
+  onAgGridBasicTableClick(){
+    this.router.navigate(['/ag-grid-basic-table']);
+  }
 }
