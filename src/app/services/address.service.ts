@@ -13,11 +13,11 @@ export class AddressService {
     return this.http.get('assets/dummy-data/addresses.json')
       .map(
         (response: Response) => {
-          const stoas = response.json();
-          for (const stoa of stoas) {
+          const addresses = response.json();
+          for (const stoa of addresses) {
             console.log(stoa.auftragsnummer);
           }
-          return stoas;
+          return addresses;
         }
       )
       .catch(
