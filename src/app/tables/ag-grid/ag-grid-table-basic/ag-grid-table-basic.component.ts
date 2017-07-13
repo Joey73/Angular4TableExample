@@ -20,7 +20,6 @@ export class AgGridTableBasicComponent implements OnInit {
     this.addressService.getAllDummyAddresses()
       .subscribe(
         data => this.rowData = data,
-        (error) => console.log(error)
-      );
+        (error) => console.log(error));
   }
 }
