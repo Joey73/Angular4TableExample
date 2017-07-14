@@ -10,7 +10,6 @@ import { AddressService } from "app/services/address.service";
 })
 export class AgGridTableBasicComponent implements OnInit {
   gridOptions: GridOptions;
-  addresses = [];
   rowData: any[];
 
   constructor(private addressService: AddressService) {
