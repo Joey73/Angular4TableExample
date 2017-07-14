@@ -3,11 +3,11 @@ import {GridOptions} from "ag-grid";
 import { AddressService } from "app/services/address.service";
 
 @Component({
-  selector: 'app-ag-grid-table-basic',
-  templateUrl: './ag-grid-table-basic.component.html',
-  styleUrls: ['./ag-grid-table-basic.component.css']
+  selector: 'app-ag-grid-table-basic-markup',
+  templateUrl: './ag-grid-table-basic-markup.component.html',
+  styleUrls: ['./ag-grid-table-basic-markup.component.css']
 })
-export class AgGridTableBasicComponent implements OnInit {
+export class AgGridTableBasicMarkupComponent implements OnInit {
   gridOptions: GridOptions;
   rowData: any[];
 

@@ -23,6 +23,6 @@ export class TableOverviewComponent implements OnInit {
   }
 
   onAgGridBasicTableClick(){
-    this.router.navigate(['/ag-grid-basic-table']);
+    this.router.navigate(['/ag-grid-basic-table-markup']);
   }
 }

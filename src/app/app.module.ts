@@ -10,7 +10,7 @@ import { BasicTableComponent } from './tables/basic-table/basic-table.component'
 import { AppRoutingModule } from "app/app-routing.module";
 import { TableOverviewComponent } from './tables/table-overview/table-overview.component';
 import { FormattedTableComponent } from './tables/formatted-table/formatted-table.component';
-import { AgGridTableBasicComponent } from './tables/ag-grid/ag-grid-table-basic/ag-grid-table-basic.component';
+import { AgGridTableBasicMarkupComponent } from './tables/ag-grid/ag-grid-table-basic-markup/ag-grid-table-basic-markup.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { AgGridTableBasicComponent } from './tables/ag-grid/ag-grid-table-basic/
     BasicTableComponent,
     TableOverviewComponent,
     FormattedTableComponent,
-    AgGridTableBasicComponent
+    AgGridTableBasicMarkupComponent
   ],
   imports: [
     BrowserModule,

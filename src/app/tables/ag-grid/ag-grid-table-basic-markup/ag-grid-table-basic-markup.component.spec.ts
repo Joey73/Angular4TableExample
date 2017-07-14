@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgGridTableBasicComponent } from './ag-grid-table-basic.component';
+import { AgGridTableBasicMarkupComponent } from './ag-grid-table-basic-markup.component';
 
 describe('AgGridTableBasicComponent', () => {
-  let component: AgGridTableBasicComponent;
-  let fixture: ComponentFixture<AgGridTableBasicComponent>;
+  let component: AgGridTableBasicMarkupComponent;
+  let fixture: ComponentFixture<AgGridTableBasicMarkupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AgGridTableBasicComponent ]
+      declarations: [ AgGridTableBasicMarkupComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgGridTableBasicComponent);
+    fixture = TestBed.createComponent(AgGridTableBasicMarkupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
