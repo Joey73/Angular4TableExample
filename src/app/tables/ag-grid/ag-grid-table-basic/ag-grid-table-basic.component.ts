@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {GridOptions} from "ag-grid";
-import { RedComponent } from "../red/red.component";
 import { AddressService } from "app/services/address.service";
 
 @Component({
