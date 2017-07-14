@@ -22,7 +22,7 @@ export class TableOverviewComponent implements OnInit {
     this.router.navigate(['/formatted-table']);
   }
 
-  onAgGridBasicTableClick(){
+  onAgGridBasicTableMarkupClick(){
     this.router.navigate(['/ag-grid-basic-table-markup']);
   }
 }
