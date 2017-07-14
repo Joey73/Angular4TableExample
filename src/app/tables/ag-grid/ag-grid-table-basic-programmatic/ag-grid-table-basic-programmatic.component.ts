@@ -14,6 +14,12 @@ export class AgGridTableBasicProgrammaticComponent implements OnInit {
   constructor(private addressService: AddressService) {
     this.gridOptions = <GridOptions>{};
     this.gridOptions.columnDefs = this.createColumnDefs();
+    this.gridOptions.enableColResize = true;
+    this.gridOptions.enableSorting = true;
+    this.gridOptions.enableFilter = true;
+    this.gridOptions.rowHeight = 22;
+    this.gridOptions.rowSelection = "multiple";
+
     // Set directly in the html file because it is not available yet
     //this.gridOptions.rowData = this.rowData;
   }
