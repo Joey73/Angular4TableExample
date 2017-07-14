@@ -6,12 +6,14 @@ import { TableOverviewComponent } from "app/tables/table-overview/table-overview
 import { BasicTableComponent } from "app/tables/basic-table/basic-table.component";
 import { FormattedTableComponent } from "app/tables/formatted-table/formatted-table.component";
 import { AgGridTableBasicMarkupComponent } from "app/tables/ag-grid/ag-grid-table-basic-markup/ag-grid-table-basic-markup.component";
+import { AgGridTableBasicProgrammaticComponent } from "app/tables/ag-grid/ag-grid-table-basic-programmatic/ag-grid-table-basic-programmatic.component";
 
 const appRoutes: Routes = [
   { path: '', component: TableOverviewComponent },
   { path: 'basic-table', component: BasicTableComponent },
   { path: 'formatted-table', component: FormattedTableComponent },
-  { path: 'ag-grid-basic-table-markup', component: AgGridTableBasicMarkupComponent }
+  { path: 'ag-grid-basic-table-markup', component: AgGridTableBasicMarkupComponent },
+  { path: 'ag-grid-basic-table-programmatic', component: AgGridTableBasicProgrammaticComponent }
 ];
 
 @NgModule({

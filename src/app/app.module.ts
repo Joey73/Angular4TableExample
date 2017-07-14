@@ -11,6 +11,7 @@ import { AppRoutingModule } from "app/app-routing.module";
 import { TableOverviewComponent } from './tables/table-overview/table-overview.component';
 import { FormattedTableComponent } from './tables/formatted-table/formatted-table.component';
 import { AgGridTableBasicMarkupComponent } from './tables/ag-grid/ag-grid-table-basic-markup/ag-grid-table-basic-markup.component';
+import { AgGridTableBasicProgrammaticComponent } from './tables/ag-grid/ag-grid-table-basic-programmatic/ag-grid-table-basic-programmatic.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AgGridTableBasicMarkupComponent } from './tables/ag-grid/ag-grid-table-
     BasicTableComponent,
     TableOverviewComponent,
     FormattedTableComponent,
-    AgGridTableBasicMarkupComponent
+    AgGridTableBasicMarkupComponent,
+    AgGridTableBasicProgrammaticComponent
   ],
   imports: [
     BrowserModule,

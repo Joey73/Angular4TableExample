@@ -25,4 +25,8 @@ export class TableOverviewComponent implements OnInit {
   onAgGridBasicTableMarkupClick(){
     this.router.navigate(['/ag-grid-basic-table-markup']);
   }
+
+  onAgGridBasicTableProgrammaticClick(){
+    this.router.navigate(['/ag-grid-basic-table-programmatic']);
+  }
 }
