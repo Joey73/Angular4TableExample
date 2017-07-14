@@ -11,7 +11,6 @@ import { AppRoutingModule } from "app/app-routing.module";
 import { TableOverviewComponent } from './tables/table-overview/table-overview.component';
 import { FormattedTableComponent } from './tables/formatted-table/formatted-table.component';
 import { AgGridTableBasicComponent } from './tables/ag-grid/ag-grid-table-basic/ag-grid-table-basic.component';
-import { RedComponent } from './tables/ag-grid/red/red.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { RedComponent } from './tables/ag-grid/red/red.component';
     BasicTableComponent,
     TableOverviewComponent,
     FormattedTableComponent,
-    AgGridTableBasicComponent,
-    RedComponent
+    AgGridTableBasicComponent
   ],
   imports: [
     BrowserModule,
