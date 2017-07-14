@@ -12,6 +12,8 @@ import { TableOverviewComponent } from './tables/table-overview/table-overview.c
 import { FormattedTableComponent } from './tables/formatted-table/formatted-table.component';
 import { AgGridTableBasicMarkupComponent } from './tables/ag-grid/ag-grid-table-basic-markup/ag-grid-table-basic-markup.component';
 import { AgGridTableBasicProgrammaticComponent } from './tables/ag-grid/ag-grid-table-basic-programmatic/ag-grid-table-basic-programmatic.component';
+import { InfoComponent } from './info/info.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AgGridTableBasicProgrammaticComponent } from './tables/ag-grid/ag-grid-
     TableOverviewComponent,
     FormattedTableComponent,
     AgGridTableBasicMarkupComponent,
-    AgGridTableBasicProgrammaticComponent
+    AgGridTableBasicProgrammaticComponent,
+    InfoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
