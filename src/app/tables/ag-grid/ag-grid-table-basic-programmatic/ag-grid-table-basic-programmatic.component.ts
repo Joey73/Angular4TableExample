@@ -13,23 +13,24 @@ export class AgGridTableBasicProgrammaticComponent implements OnInit {
 
   constructor(private addressService: AddressService) {
     this.gridOptions = <GridOptions>{};
-    this.gridOptions.columnDefs = this.createColumnDefs();
     this.gridOptions.enableColResize = true;
     this.gridOptions.enableSorting = true;
     this.gridOptions.enableFilter = true;
     this.gridOptions.rowHeight = 22;
     this.gridOptions.rowSelection = "multiple";
 
-    // Set directly in the html file because it is not available yet
-    //this.gridOptions.rowData = this.rowData;
+    this.addressService.getAllDummyAddresses().subscribe(
+        data => {
+            this.gridOptions.api.setColumnDefs(this.createColumnDefs()); 
+            this.gridOptions.api.setRowData(data);
+            this.gridOptions.enableColResize = true;
+            this.gridOptions.api.refreshView();
+        },
+        (error) => console.log(error)
+    );
   }
 
   ngOnInit() {
-    this.addressService.getAllDummyAddresses()
-      .subscribe(
-        data => this.rowData = data,
-        (error) => console.log(error)
-      );
   }
 
   createColumnDefs(){
