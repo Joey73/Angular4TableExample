@@ -17,7 +17,7 @@ export class AgGridTableBasicProgrammaticComponent implements OnInit {
     this.gridOptions.enableSorting = true;
     this.gridOptions.enableFilter = true;
     this.gridOptions.rowHeight = 22;
-    this.gridOptions.rowSelection = "multiple";
+    this.gridOptions.rowSelection = "single"; // or multiple
 
     this.addressService.getAllDummyAddresses().subscribe(
         data => {
@@ -31,6 +31,14 @@ export class AgGridTableBasicProgrammaticComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onRowClicked(event: any) {
+      console.log('Row clicked. Data: ', event.data);
+  }
+
+  onCellClicked(event: any) {
+      console.log('Cell clicked. Data: ', event.data);
   }
 
   createColumnDefs(){

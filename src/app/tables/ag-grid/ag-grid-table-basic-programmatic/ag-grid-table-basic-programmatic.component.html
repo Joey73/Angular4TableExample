@@ -3,5 +3,5 @@
 <h4>(Programmatic approach)</h4>
 <p></p>
 <ag-grid-angular #agGrid style="width: 80%; height: 350px;" class="ag-fresh"
-  [gridOptions]="gridOptions">
+  [gridOptions]="gridOptions" (rowClicked)='onRowClicked($event)' (cellClicked)='onCellClicked($event)'>
 </ag-grid-angular>

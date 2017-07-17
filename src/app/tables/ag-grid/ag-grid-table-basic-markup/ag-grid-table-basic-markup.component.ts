@@ -21,4 +21,12 @@ export class AgGridTableBasicMarkupComponent implements OnInit {
         (error) => console.log(error)
       );
   }
+  
+  onRowClicked(event: any) {
+      console.log('Row clicked. Data: ', event.data);
+  }
+
+  onCellClicked(event: any) {
+      console.log('Cell clicked. Data: ', event.data);
+  }
 }
